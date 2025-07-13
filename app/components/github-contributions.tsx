@@ -333,13 +333,17 @@ export function GitHubContributions({ username = "Shubbu03" }: GitHubContributio
                         <div className="flex items-center space-x-4">
                             <Image
                                 src={user.avatar_url}
-                                alt={`${user.name}'s avatar`}
+                                alt={`${user.name || user.login}'s avatar`}
                                 width={48}
                                 height={48}
                                 className="rounded-full border-2 border-primary/20"
+                                priority={true}
+                                onError={(e) => {
+                                    console.error('Failed to load avatar:', e);
+                                }}
                             />
                             <div>
-                                <h3 className="text-lg font-semibold">{user.name}</h3>
+                                <h3 className="text-lg font-semibold">{user.name || user.login}</h3>
                                 <p className="text-sm text-muted-foreground">@{user.login}</p>
                                 {user.bio && (
                                     <p className="text-sm text-foreground/80 mt-1">{user.bio}</p>
