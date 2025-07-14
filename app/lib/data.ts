@@ -262,5 +262,21 @@ export const sampleReports: ProgressReport[] = [
     ],
 
     "tags": ["solana", "turbine", "amm"]
+  },
+  {
+    "id": "21",
+    "number": 21,
+    "date": "2025-07-14",
+    "items": [
+      "did a lot of work on the capstone project this past few days.",
+      "really enjoyed building & learning new things, did AMM",
+      "also created PR Logs - Progress Reports for these pr",
+      "getting an itch to do vault, escrow again and practice more anchor"
+    ],
+    "link": {
+      "name": "pr-logs",
+      "url": "https://pr-logs.shubbu.dev/"
+    },
+    "tags": ["solana", "turbine", "capstone"]
   }
 ]
