@@ -273,10 +273,6 @@ export const sampleReports: ProgressReport[] = [
       "also created PR Logs - Progress Reports for these pr",
       "getting an itch to do vault, escrow again and practice more anchor"
     ],
-    "link": {
-      "name": "pr-logs",
-      "url": "https://pr-logs.shubbu.dev/"
-    },
     "tags": ["solana", "turbine", "capstone"]
   }
 ]
